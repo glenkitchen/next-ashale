@@ -30,6 +30,7 @@ export default function Contact() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string>("");
 
   const contactInfo = [
     {
@@ -108,10 +109,24 @@ export default function Contact() {
     }
 
     setIsSubmitting(true);
+    setSubmitError("");
 
-    // Simulate form submission
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const response = await fetch("/api/send-quote", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to send quote request");
+      }
+
+      // Success - show success page
       setIsSubmitted(true);
       setFormData({
         name: "",
@@ -124,6 +139,11 @@ export default function Contact() {
       });
     } catch (error) {
       console.error("Form submission error:", error);
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "Failed to send quote request. Please try again or call us directly at 063 512 1494."
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -150,8 +170,9 @@ export default function Contact() {
                 Thank You!
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Your quote request has been submitted successfully. We&apos;ll
-                get back to you within 24 hours.
+                Your quote request has been sent successfully! We&apos;ve
+                emailed you a confirmation and will contact you within 2-4 hours
+                during business hours.
               </p>
               <Button
                 onClick={() => setIsSubmitted(false)}
@@ -239,6 +260,34 @@ export default function Contact() {
               </h3>
 
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Error Message */}
+                {submitError && (
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <p className="text-red-600 text-sm">{submitError}</p>
+                    <div className="mt-2 text-sm text-gray-600">
+                      <p>You can also contact us directly:</p>
+                      <p>
+                        📞{" "}
+                        <a
+                          href="tel:0635121494"
+                          className="text-blue-600 hover:underline"
+                        >
+                          063 512 1494
+                        </a>
+                      </p>
+                      <p>
+                        📧{" "}
+                        <a
+                          href="mailto:info@ashaleautomation.com"
+                          className="text-blue-600 hover:underline"
+                        >
+                          info@ashaleautomation.com
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                )}
+
                 {/* Name */}
                 <div>
                   <Label
