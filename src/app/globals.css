@@ -76,6 +76,16 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Custom Ashale Automation Brand Colors */
+  --ashale-gold: #ffd700;
+  --ashale-gold-dark: #ffa500;
+  --ashale-dark: #1a1a1a;
+  --ashale-medium: #2d2d2d;
+  --ashale-light: #f8f9fa;
+  --ashale-gray: #6c757d;
+  --ashale-blue: #4a90e2;
+  --ashale-blue-dark: #357abd;
 }
 
 .dark {
@@ -116,7 +126,163 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans), system-ui, sans-serif;
+    line-height: 1.6;
+  }
+}
+
+/* Custom animations for hero section */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  /* Responsive image utilities */
+  .responsive-image {
+    @apply w-full h-auto object-cover;
+  }
+
+  /* Enhanced responsive container */
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Responsive grid systems */
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8;
+  }
+
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  .grid-responsive-4 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6;
+  }
+
+  /* Responsive text utilities */
+  .text-responsive-lg {
+    @apply text-2xl sm:text-3xl lg:text-4xl xl:text-5xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-3xl sm:text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  /* Professional color schemes */
+  .bg-ashale-dark {
+    background-color: var(--ashale-dark);
+  }
+
+  .bg-ashale-medium {
+    background-color: var(--ashale-medium);
+  }
+
+  .text-ashale-gold {
+    color: var(--ashale-gold);
+  }
+
+  .text-ashale-blue {
+    color: var(--ashale-blue);
+  }
+
+  .gradient-ashale {
+    background: linear-gradient(
+      135deg,
+      var(--ashale-gold) 0%,
+      var(--ashale-gold-dark) 100%
+    );
+  }
+
+  .gradient-text-ashale {
+    background: linear-gradient(
+      135deg,
+      var(--ashale-gold) 0%,
+      var(--ashale-gold-dark) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Enhanced hover effects */
+  .hover-lift {
+    @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-yellow-500/25;
+  }
+
+  /* Mobile-first responsive spacing */
+  .spacing-responsive {
+    @apply py-8 sm:py-12 lg:py-16 xl:py-20;
+  }
+
+  .spacing-responsive-sm {
+    @apply py-4 sm:py-6 lg:py-8;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced responsive breakpoints */
+@media (max-width: 640px) {
+  .container-responsive {
+    @apply px-3;
+  }
+
+  .text-responsive-xl {
+    @apply leading-tight;
+  }
+
+  .grid-responsive-2 {
+    @apply gap-4;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-responsive-xl {
+    @apply text-2xl leading-tight;
+  }
+
+  .spacing-responsive {
+    @apply py-6;
+  }
+}
+
+/* Print styles for better accessibility */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    @apply text-black bg-white;
   }
 }
