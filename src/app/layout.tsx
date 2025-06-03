@@ -13,17 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ashale Automation - Garage Doors & Gate Motors | Johannesburg",
+  title: "Ashale Automation - Garage Doors & Gate Motors | Ballito",
   description:
-    "Expert garage door installation, repair & gate motor services in Johannesburg. Professional automation solutions for homes & businesses. Call 063 512 1494 for free quotes.",
+    "Expert garage door installation, repair & gate motor services in Ballito. Professional automation solutions for homes & businesses. Call 063 512 1494 for free quotes.",
   keywords: [
     "garage door installation",
     "garage door repair",
     "gate motor installation",
     "gate motor repair",
-    "Johannesburg garage doors",
-    "Pretoria gate motors",
-    "Sandton automation",
+    "Ballito garage doors",
+    "Durban gate motors",
+    "Ballito automation",
+    "Durban automation",
     "garage door service",
     "sliding gate motors",
     "swing gate motors",
@@ -40,15 +41,15 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.ashaleautomation.com"),
+  metadataBase: new URL("https://www.ashale.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Ashale Automation - Professional Garage Door & Gate Motor Services",
     description:
-      "Expert Technical Solutions for Your Home and Business! Professional garage door installation, repair and gate motor services in Johannesburg area.",
-    url: "https://www.ashaleautomation.com",
+      "Expert Technical Solutions for Your Home and Business! Professional garage door installation, repair and gate motor services in Durban area.",
+    url: "https://www.ashale.vercel.app",
     siteName: "Ashale Automation",
     images: [
       {
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ashale Automation - Garage Doors & Gate Motors",
     description:
-      "Expert garage door & gate motor services in Johannesburg. Professional installation and repair solutions.",
+      "Expert garage door & gate motor services in Ballito. Professional installation and repair solutions.",
     images: ["/image1.png"],
   },
   robots: {
@@ -94,16 +95,16 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <meta name="geo.region" content="ZA-GP" />
-        <meta name="geo.placename" content="Johannesburg" />
-        <meta name="geo.position" content="-26.2041;28.0473" />
-        <meta name="ICBM" content="-26.2041, 28.0473" />
+        <meta name="geo.region" content="ZA-KZN" />
+        <meta name="geo.placename" content="Durban" />
+        <meta name="geo.position" content="-29.8587;31.022" />
+        <meta name="ICBM" content="-29.8587, 31.022" />
         <meta
           name="business:contact_data:street_address"
-          content="Johannesburg Area"
+          content="Durban Area"
         />
-        <meta name="business:contact_data:locality" content="Johannesburg" />
-        <meta name="business:contact_data:region" content="Gauteng" />
+        <meta name="business:contact_data:locality" content="Durban" />
+        <meta name="business:contact_data:region" content="KwaZulu-Natal" />
         <meta name="business:contact_data:postal_code" content="" />
         <meta
           name="business:contact_data:country_name"
@@ -115,7 +116,7 @@ export default function RootLayout({
         />
         <meta
           name="business:contact_data:website"
-          content="https://www.ashaleautomation.com"
+          content="https://www.ashale.vercel.app"
         />
         <script
           type="application/ld+json"
@@ -124,31 +125,30 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Ashale Automation",
-              image: "https://www.ashaleautomation.com/image1.png",
+              image: "https://www.ashale.vercel.app/image1.png",
               description:
                 "Expert Technical Solutions for Your Home and Business! Professional garage door installation, repair and gate motor services.",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Johannesburg",
-                addressRegion: "Gauteng",
+                addressLocality: "Ballito",
+                addressRegion: "KwaZulu-Natal",
                 addressCountry: "ZA",
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: -26.2041,
-                longitude: 28.0473,
+                latitude: -29.8587,
+                longitude: 31.022,
               },
-              url: "https://www.ashaleautomation.com",
+              url: "https://www.ashale.vercel.app",
               telephone: "+27635121494",
-              email: "info@ashaleautomation.com",
+              email: "durbanautomation@gmail.com",
               openingHours: ["Mo-Fr 08:00-18:00", "Sa 08:00-14:00"],
               serviceArea: [
-                "Johannesburg",
-                "Pretoria",
-                "Sandton",
-                "Midrand",
-                "Centurion",
-                "Fourways",
+                "Ballito",
+                "Durban",
+                "Umhlanga",
+                "KwaDukuza",
+                "KwaZulu-Natal",
               ],
               services: [
                 "Garage Door Installation",

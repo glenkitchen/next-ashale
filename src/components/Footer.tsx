@@ -29,8 +29,8 @@ export default function Footer() {
     },
     {
       icon: Globe,
-      text: "www.ashaleautomation.com",
-      href: "https://www.ashaleautomation.com",
+      text: "www.ashale.vercel.app",
+      href: "https://www.ashale.vercel.app",
     },
     {
       icon: Clock,
@@ -58,12 +58,11 @@ export default function Footer() {
   ];
 
   const serviceAreas = [
-    "Johannesburg",
-    "Pretoria",
-    "Sandton",
-    "Midrand",
-    "Centurion",
-    "Fourways",
+    "Ballito",
+    "Durban",
+    "Umhlanga",
+    "KwaDukuza",
+    "KwaZulu-Natal",
   ];
 
   return (
@@ -163,11 +162,11 @@ export default function Footer() {
               {/* Email */}
               <li>
                 <a
-                  href="mailto:info@ashaleautomation.com"
+                  href="mailto:durbanautomation@gmail.com"
                   className="flex items-center space-x-3 text-gray-400 hover:text-[#FFD700] transition-colors text-sm"
                 >
                   <Mail className="h-4 w-4 text-[#FFD700] flex-shrink-0" />
-                  <span>info@ashaleautomation.com</span>
+                  <span>durbanautomation@gmail.com</span>
                 </a>
               </li>
             </ul>
@@ -182,7 +181,7 @@ export default function Footer() {
               <MapPin className="h-4 w-4 text-[#FFD700] flex-shrink-0 mt-0.5" />
               <div>
                 <p className="text-gray-400 text-sm mb-2">
-                  We serve the greater Johannesburg area:
+                  We serve the greater Durban area:
                 </p>
                 <ul className="grid grid-cols-1 gap-1 text-gray-400 text-sm">
                   {serviceAreas.map((area, index) => (
@@ -220,7 +219,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-sm">
-                © 2024 Ashale Automation. All rights reserved.
+                © 2025 Ashale Automation. All rights reserved.
               </p>
               <p className="text-gray-500 text-xs mt-1">
                 Professional garage door and gate motor solutions

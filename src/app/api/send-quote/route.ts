@@ -198,8 +198,8 @@ const createCustomerEmailTemplate = (formData: QuoteFormData) => {
           <div class="contact-info">
             <h2>📞 Contact Information</h2>
             <p><strong>Phone:</strong> <a href="tel:0635121494" style="color: #FFD700;">063 512 1494</a></p>
-            <p><strong>Email:</strong> <a href="mailto:info@ashaleautomation.com" style="color: #FFD700;">info@ashaleautomation.com</a></p>
-            <p><strong>Website:</strong> <a href="https://www.ashaleautomation.com" style="color: #FFD700;">www.ashaleautomation.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:durbanautomation@gmail.com" style="color: #FFD700;">durbanautomation@gmail.com</a></p>
+            <p><strong>Website:</strong> <a href="https://www.ashale.vercel.app" style="color: #FFD700;">www.ashale.vercel.app</a></p>
             <p><strong>Business Hours:</strong> Mon-Fri 8:00-18:00, Sat 8:00-14:00</p>
             <p><strong>Emergency Service:</strong> 24/7 Available</p>
           </div>
@@ -312,7 +312,7 @@ export async function POST(request: NextRequest) {
             "Failed to send email. Please try again or contact us directly at 063 512 1494.",
           fallback: {
             phone: "063 512 1494",
-            email: "info@ashaleautomation.com",
+            email: "durbanautomation@gmail.com",
           },
         },
         { status: 500 }
@@ -325,7 +325,7 @@ export async function POST(request: NextRequest) {
         error: "Server error. Please try again later or contact us directly.",
         fallback: {
           phone: "063 512 1494",
-          email: "info@ashaleautomation.com",
+          email: "durbanautomation@gmail.com",
         },
       },
       { status: 500 }

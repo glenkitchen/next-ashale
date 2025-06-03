@@ -42,7 +42,7 @@ export default function Contact() {
     {
       icon: Globe,
       title: "Website",
-      details: "www.ashaleautomation.com",
+      details: "www.ashale.vercel.app",
       subtitle: "Visit our website",
     },
     {
@@ -242,11 +242,11 @@ export default function Contact() {
                   <span>Call Now: 063 512 1494</span>
                 </a>
                 <a
-                  href="mailto:info@ashaleautomation.com"
+                  href="mailto:durbanautomation@gmail.com"
                   className="flex items-center space-x-3 text-gray-300 hover:text-[#FFD700] transition-colors"
                 >
                   <Mail className="h-4 w-4" />
-                  <span>Email: info@ashaleautomation.com</span>
+                  <span>Email: durbanautomation@gmail.com</span>
                 </a>
               </div>
             </div>
@@ -278,10 +278,10 @@ export default function Contact() {
                       <p>
                         📧{" "}
                         <a
-                          href="mailto:info@ashaleautomation.com"
+                          href="durbanautomation@gmail.com"
                           className="text-blue-600 hover:underline"
                         >
-                          info@ashaleautomation.com
+                          durbanautomation@gmail.com
                         </a>
                       </p>
                     </div>

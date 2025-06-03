@@ -40,8 +40,6 @@ export default function About() {
   const achievements = [
     { number: "10+", label: "Years Experience", icon: Award },
     { number: "500+", label: "Projects Completed", icon: CheckCircle },
-    { number: "100%", label: "Customer Satisfaction", icon: Shield },
-    { number: "24/7", label: "Support Available", icon: Phone },
   ];
 
   return (
@@ -126,21 +124,9 @@ export default function About() {
               </Badge>
             </div>
 
-            {/* Stats Card */}
-            <Card className="absolute -bottom-6 -left-6 bg-white shadow-xl border-0">
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mb-1">
-                  10+
-                </div>
-                <div className="text-sm text-gray-600 font-medium">
-                  Years Experience
-                </div>
-              </CardContent>
-            </Card>
-
             {/* Additional Achievement Cards */}
             <div className="mt-8 grid grid-cols-2 gap-4">
-              {achievements.slice(1, 3).map((achievement, index) => {
+              {achievements.slice(0, 2).map((achievement, index) => {
                 const IconComponent = achievement.icon;
                 return (
                   <Card

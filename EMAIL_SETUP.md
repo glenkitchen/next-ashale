@@ -12,7 +12,7 @@ Create a `.env.local` file in the project root with the following variables:
 # Email Configuration
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-password-here
-BUSINESS_EMAIL=info@ashaleautomation.com
+BUSINESS_EMAIL=durbanautomation@gmail.com
 ```
 
 ## Gmail Setup (Recommended)
@@ -32,7 +32,7 @@ BUSINESS_EMAIL=info@ashaleautomation.com
    ```env
    EMAIL_USER=your-gmail@gmail.com
    EMAIL_PASS=your-16-digit-app-password
-   BUSINESS_EMAIL=info@ashaleautomation.com
+   BUSINESS_EMAIL=durbanautomation@gmail.com
    ```
 
 ## Alternative Email Providers
