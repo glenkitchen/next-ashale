@@ -5,9 +5,9 @@ import {
   Phone,
   Globe,
   Clock,
-  Facebook,
+  /*   Facebook,
   Instagram,
-  Linkedin,
+  Linkedin, */
   Mail,
   MapPin,
 } from "lucide-react";
@@ -39,7 +39,7 @@ export default function Footer() {
     },
   ];
 
-  const socialLinks = [
+  /*   const socialLinks = [
     {
       icon: Facebook,
       href: "#",
@@ -55,7 +55,7 @@ export default function Footer() {
       href: "#",
       label: "LinkedIn",
     },
-  ];
+  ]; */
 
   const serviceAreas = [
     "Ballito",
@@ -92,7 +92,7 @@ export default function Footer() {
             </div>
 
             {/* Social Links */}
-            <div className="flex space-x-4 pt-4">
+            {/* <div className="flex space-x-4 pt-4">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon;
                 return (
@@ -106,7 +106,7 @@ export default function Footer() {
                   </a>
                 );
               })}
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}
