@@ -19,9 +19,11 @@ export default function Hero() {
           {/* Left side - Text content */}
           <div className="animate-fade-in opacity-0 animate-delay-300 text-center lg:text-left">
             <h1 className="text-responsive-xl font-bold text-white mb-4 sm:mb-6">
-              <span className="gradient-text-ashale">GARAGE DOORS</span>
+              <span className="gradient-text-ashale">GARAGE DOORS &</span>
               <br />
-              <span className="text-white">GATE MOTORS</span>
+              <span className="text-white">GATE MOTORS,</span>
+              <br />
+              <span className="gradient-text-ashale">BALLITO</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
