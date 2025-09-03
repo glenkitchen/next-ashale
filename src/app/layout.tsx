@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ashale Automation - Garage Doors & Gate Motors | Ballito",
+  title: "Garage Door Ballito | Gate Motor Ballito",
   description:
-    "Expert garage door installation, repair & gate motor services in Ballito. Professional automation solutions for homes & businesses. Call 063 512 1494 for free quotes.",
+    "Garage Door Ballito 079 769 6789 | Gate Motor Ballito 079 769 6789",
   keywords: [
     "garage door installation",
     "garage door repair",
