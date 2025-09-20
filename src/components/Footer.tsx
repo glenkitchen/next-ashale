@@ -1,16 +1,16 @@
 "use client";
 
-import Link from "next/link";
 import {
-  Phone,
-  Globe,
   Clock,
+  Globe,
   /*   Facebook,
-  Instagram,
-  Linkedin, */
+    Instagram,
+    Linkedin, */
   Mail,
   MapPin,
+  Phone,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   const services = [
@@ -24,8 +24,8 @@ export default function Footer() {
   const contactInfo = [
     {
       icon: Phone,
-      text: "063 512 1494",
-      href: "tel:0635121494",
+      text: "079 769 6789",
+      href: "tel:0797696789",
     },
     {
       icon: Globe,
@@ -205,10 +205,10 @@ export default function Footer() {
                 24/7 Emergency Repairs Available
               </p>
               <a
-                href="tel:0635121494"
+                href="tel:0797696789"
                 className="text-white hover:text-[#FFD700] transition-colors text-sm font-medium"
               >
-                Call: 063 512 1494
+                Call: 079 769 6789
               </a>
             </div>
           </div>

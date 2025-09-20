@@ -1,11 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
   Select,
   SelectContent,
@@ -13,8 +12,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Phone, Globe, Clock, Mail, Send, CheckCircle } from "lucide-react";
+import { Textarea } from "@/components/ui/textarea";
+import { CheckCircle, Clock, Globe, Mail, Phone, Send } from "lucide-react";
+import { useState } from "react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -36,7 +36,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      details: "063 512 1494",
+      details: "079 769 6789",
       subtitle: "Call us anytime",
     },
     {
@@ -142,7 +142,7 @@ export default function Contact() {
       setSubmitError(
         error instanceof Error
           ? error.message
-          : "Failed to send quote request. Please try again or call us directly at 063 512 1494."
+          : "Failed to send quote request. Please try again or call us directly at 079 769 6789."
       );
     } finally {
       setIsSubmitting(false);
@@ -235,11 +235,11 @@ export default function Contact() {
               </h4>
               <div className="space-y-3">
                 <a
-                  href="tel:0635121494"
+                  href="tel:0797696789"
                   className="flex items-center space-x-3 text-gray-300 hover:text-[#FFD700] transition-colors"
                 >
                   <Phone className="h-4 w-4" />
-                  <span>Call Now: 063 512 1494</span>
+                  <span>Call Now: 079 769 6789</span>
                 </a>
                 <a
                   href="mailto:durbanautomation@gmail.com"
@@ -269,10 +269,10 @@ export default function Contact() {
                       <p>
                         📞{" "}
                         <a
-                          href="tel:0635121494"
+                          href="tel:0797696789"
                           className="text-blue-600 hover:underline"
                         >
-                          063 512 1494
+                          079 769 6789
                         </a>
                       </p>
                       <p>

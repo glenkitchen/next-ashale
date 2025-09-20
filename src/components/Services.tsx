@@ -1,14 +1,14 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import {
-  Settings,
-  Wrench,
+  CheckCircle,
   DoorOpen,
   FileText,
+  Settings,
   Star,
-  CheckCircle,
+  Wrench,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -194,10 +194,10 @@ export default function Services() {
                 Get Free Quote
               </Link>
               <a
-                href="tel:0635121494"
+                href="tel:0797696789"
                 className="border-2 border-[#FFD700] text-[#FFD700] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#FFD700] hover:text-black transition-all duration-300 text-sm sm:text-base inline-block"
               >
-                Call 063 512 1494
+                Call 079 769 6789
               </a>
             </div>
           </div>

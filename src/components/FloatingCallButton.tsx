@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export default function FloatingCallButton() {
   return (
     <a
-      href="tel:0635121494"
+      href="tel:0797696789"
       className="fixed bottom-4 right-4 z-40 md:hidden no-print"
       aria-label="Call Ashale Automation"
     >

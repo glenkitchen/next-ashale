@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Clock, Shield, Phone, Award, CheckCircle } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Award, CheckCircle, Clock, Phone, Shield, Users } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
   const features = [
@@ -48,19 +48,19 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Why Choose{" "}
-              <span className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent">
-                Ashale Automation
-              </span>
-              ?
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 inline">
+              Garage Doors Ballito | Garage Motors Ballito | Gate Motors Ballito{" "}
             </h2>
+            <a
+              href="tel:0797696789"
+              className="text-4xl font-bold text-gray-900 mb-6 inline-block"
+            >
+              079 769 6789
+            </a>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              With years of experience in the automation industry, we provide
-              expert technical solutions for both residential and commercial
-              properties. Our commitment to quality and customer satisfaction
-              sets us apart.
+              Garage Door Installations & Repairs | Garage Motor Installations &
+              Repairs | Gate Motor Installation & Repairs
             </p>
 
             {/* Features Grid */}

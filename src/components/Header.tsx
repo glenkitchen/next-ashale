@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,10 +47,10 @@ export default function Header() {
             <div className="ml-8 flex items-center">
               <Phone className="h-4 w-4 text-[#FFD700] mr-2" />
               <a
-                href="tel:0635121494"
+                href="tel:0797696789"
                 className="text-white hover:text-[#FFD700] text-sm font-medium transition-colors duration-300"
               >
-                063 512 1494
+                079 769 6789
               </a>
             </div>
           </div>
@@ -87,12 +87,12 @@ export default function Header() {
                   {/* Mobile Contact */}
                   <div className="mt-8 pt-6 border-t border-gray-600">
                     <a
-                      href="tel:0635121494"
+                      href="tel:0797696789"
                       className="flex items-center px-4 py-3 text-white hover:text-[#FFD700] transition-colors duration-300 rounded-lg hover:bg-white/5"
                       onClick={() => setIsOpen(false)}
                     >
                       <Phone className="h-5 w-5 text-[#FFD700] mr-3" />
-                      <span className="text-lg font-medium">063 512 1494</span>
+                      <span className="text-lg font-medium">079 769 6789</span>
                     </a>
                     <p className="text-gray-400 text-sm px-4 mt-2">
                       Call for immediate service
