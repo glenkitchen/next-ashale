@@ -271,10 +271,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Email to business owner
+    // Email to business owner. replyTo is the customer so a plain "Reply"
+    // reaches them directly instead of the Gmail sending account.
     const businessEmailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.BUSINESS_EMAIL || process.env.EMAIL_USER,
+      replyTo: formData.email,
       subject: `New Quote Request - ${formData.serviceType} (${formData.name})`,
       html: createBusinessEmailTemplate(formData),
     };
